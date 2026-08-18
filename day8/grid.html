@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .products{
+            /* parent  */
+            background-color:rgb(218, 137, 113);
+            padding: 10px;
+            display: grid;
+            /* grid-template-columns: repeat(no. of cols,size of cols); */
+            grid-template-columns: repeat(2,500px);
+            grid-template-columns: repeat(2,1fr);
+            /* this to fit the no, of cols in a given frame 
+            BETTER OPTION */
+            gap: 20px;
+
+        }
+        .cafe{
+            background-color: rgb(203, 59, 26);
+            border: 0.4px solid black;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<div class="products">
+    <!-- flex was either row or column -->
+    <!-- suppose a bakkery have the following items-->
+    <div class="cafe">cake</div>
+    <div class="cafe">cakeprice</div>
+    <div class="cafe">pastry</div>
+    <div class="cafe">pastry price</div>
+    <div class="cafe">cookie</div>
+    <div class="cafe">cookie price</div>
+</div>
+</body>
+</html>

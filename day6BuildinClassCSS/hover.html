@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* first creating box */
+        div{
+            width: 200px;
+            height: 200px;
+            background-color: aqua;
+            text-align: center;
+        }
+        div:hover{
+            background-color: lightcoral;
+            color:green;
+            /* time control;transition  */
+            transition: 2s;
+            transform: translateX(400px) translateY(400px) rotateX(180deg) rotateY(180deg) scale(1.5);
+            /* everything should have ";" at the end
+            moving the box =transform :translateX
+                                        translateY(400px)
+                                        translateZ(200px)
+                                        scale(1.5)
+                                        rotateX(180deg)
+                                        rotateY(180deg)
+                                */
+        }
+    </style>
+</head>
+<body>
+    <!-- bydefault div containers take 100% width -->
+    <!-- <hover will do style or changes to style when user hover the mouse
+    on any tag --> 
+    <div>
+        <p>Hover over me!</p>
+    </div>
+    <div>
+        <p>Hover over me!</p>
+    </div>
+    <div>
+        <p>Hover over me!</p>
+    </div>
+</body>
+</html>

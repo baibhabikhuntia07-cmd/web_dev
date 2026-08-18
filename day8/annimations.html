@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: rgb(236, 111, 111);
+        }
+        /* opacity:1/0 works  */
+
+        /* WE CAN DO BOUNCE BALL THING */
+
+        
+        /* 1) define a object
+           2) name the annimation
+           *put the duration
+           3) use @keyframes 
+           4)use "from" to "to"  or 0% 25% 50% 75% 100% thing
+           5) mention the itteration counts*/
+        .box{
+            height:100px;
+            width: 100px;
+            border-radius: 50%;
+            background-color: aquamarine;
+            animation-name: colorChange;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+        }
+        /* @keyframes colorChange{ 
+            from{background-color: aquamarine;}
+
+            to{background-color: red;}
+        }*/
+        @keyframes colorChange{
+            0% {background-color: violet; transform: rotateX(10deg) translateX(0px);}
+            15% {background-color: blue; transform: rotateX(30deg) translate(100px) translateY(0px);}
+            30% {background-color: green; transform: rotateX(50deg) translateX(200px) translateY(100px);}
+            45% {background-color: yellow; transform: rotateX(120deg) translateX(300px) translateY(200px); }
+            65% {background-color: orange;}
+            80% {background-color: red; transform: rotateX(360deg) translateX(400px) translateY(300px);}
+            100% {background-color: black;}
+        }
+    </style>
+
+</head>
+<body>
+    <!-- annimations=chang in effects
+     we need to have keyframes -->
+
+     <!-- CHANGE IN THE COLORS -->
+      <strong>annimations effect goes back to original form after completion</strong>
+
+      <div class="box"></div>
+      <!-- create a body to annimate -->
+</body>
+</html>
