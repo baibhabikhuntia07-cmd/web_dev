@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //functions help us to do a specific task
+        // function greet(){
+        //          body/logic}
+        // define then call it to do the task
+        function greet(){
+            console.log("hello user")
+        }
+        //with parameter
+        function greetuser(name){
+            console.log("good evening "+name)
+        }
+        //function with return
+        function totalbill(price,quantity){
+            return  price*quantity
+        }
+
+        greet() //calling a function
+        greetuser("baibhabi")
+        let result=totalbill(200,40)
+        console.log("the price is "+result)
+
+        //arrow function
+        let fun1= ()=> {
+            console.log("hello i'm arrow function")
+        }
+        fun1()
+        
+
+
+
+    </script>
+</body>
+</html>
