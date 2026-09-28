@@ -15,6 +15,16 @@
      //${variable/parameter}
      let username="david"
      console.log(`hello ${username} shutup `)
+
+     //setTimeout() -1000 means 1sec runs only after 5 seconds once
+     setTimeout(()=>{
+        console.log("run in 5 sec")
+     },5000)
+
+     //setInterval() runs after every 3 sec
+     setInterval(()=>{
+        console.log("after 3 sec break")
+     },3000)
     </script>
     
 </body>

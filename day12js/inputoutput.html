@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //taking input from js
+        //let username = prompt("enter name:")
+        //console.log(username)
+        //confirm = yes no in the form of alert
+       // let res = confirm("logout")
+       // console.log(res)
+
+        //task : write a logoc to give access to user if its the admin or decline access
+        function permission(){
+         let admin = confirm("are you the admin")
+            if(admin==true){
+               let password= prompt("enter password:")
+               if(password=="admin")
+                alert("access granted")
+            }
+            else{
+                alert("access denied")
+            }
+        }
+        permission()
+    </script>
+</body>
+</html>
